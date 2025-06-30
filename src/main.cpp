@@ -1,4 +1,6 @@
 #include <Arduino.h>
+#include "SimpleCAN.h"
+#include <SimpleFOC.h>
 
 #define LED_PIN PC6
 #define BUTTON_PIN PC10
@@ -10,7 +12,7 @@ void setup() {
 
   pinMode(LED_PIN, OUTPUT);
   pinMode(BUTTON_PIN, INPUT_PULLUP);
-  
+
   digitalWrite(LED_PIN, LOW); // Turn off LED
 }
 
